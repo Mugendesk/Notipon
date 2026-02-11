@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* NotifyDeckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* NotifyDeckApp.swift */; };
+		B10000000000000000000002 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* NotificationItem.swift */; };
+		B10000000000000000000003 /* NotificationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* NotificationFilter.swift */; };
+		B10000000000000000000004 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* StorageManager.swift */; };
+		B10000000000000000000005 /* NotificationMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* NotificationMonitor.swift */; };
+		B10000000000000000000006 /* NotificationCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000006 /* NotificationCleaner.swift */; };
+		B10000000000000000000007 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000007 /* PermissionManager.swift */; };
+		B10000000000000000000008 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000008 /* SettingsManager.swift */; };
+		B10000000000000000000009 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* MenuBarController.swift */; };
+		B1000000000000000000000A /* HoverPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000A /* HoverPreviewView.swift */; };
+		B1000000000000000000000B /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000B /* DropdownView.swift */; };
+		B1000000000000000000000C /* HistoryWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000C /* HistoryWindowView.swift */; };
+		B1000000000000000000000D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000D /* SettingsView.swift */; };
+		B1000000000000000000000E /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000E /* NotificationRow.swift */; };
+		B1000000000000000000000F /* AppFilterChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000F /* AppFilterChip.swift */; };
+		B10000000000000000000010 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000010 /* SearchBar.swift */; };
+		B10000000000000000000011 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000011 /* SyncService.swift */; };
+		B10000000000000000000012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000012 /* Assets.xcassets */; };
+		B10000000000000000000013 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = B60000000000000000000001 /* GRDB */; };
+		B10000000000000000000014 /* NotificationPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000016 /* NotificationPopupController.swift */; };
+		B10000000000000000000015 /* NotificationPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000017 /* NotificationPopupView.swift */; };
+		B10000000000000000000016 /* AccessibilityNotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000018 /* AccessibilityNotificationObserver.swift */; };
+		B10000000000000000000017 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000019 /* AppConstants.swift */; };
+		B10000000000000000000018 /* VersionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001A /* VersionChecker.swift */; };
+		B10000000000000000000019 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001B /* KeyboardShortcut.swift */; };
+		B1000000000000000000001A /* KeyRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001C /* KeyRecorderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20000000000000000000001 /* NotifyDeckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyDeckApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* NotificationFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFilter.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B20000000000000000000005 /* NotificationMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMonitor.swift; sourceTree = "<group>"; };
+		B20000000000000000000006 /* NotificationCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCleaner.swift; sourceTree = "<group>"; };
+		B20000000000000000000007 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		B20000000000000000000008 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		B20000000000000000000009 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		B2000000000000000000000A /* HoverPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverPreviewView.swift; sourceTree = "<group>"; };
+		B2000000000000000000000B /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		B2000000000000000000000C /* HistoryWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWindowView.swift; sourceTree = "<group>"; };
+		B2000000000000000000000D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B2000000000000000000000E /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		B2000000000000000000000F /* AppFilterChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFilterChip.swift; sourceTree = "<group>"; };
+		B20000000000000000000010 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B20000000000000000000011 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		B20000000000000000000012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20000000000000000000013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20000000000000000000014 /* NotifyDeck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotifyDeck.entitlements; sourceTree = "<group>"; };
+		B20000000000000000000015 /* NotifyDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000016 /* NotificationPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopupController.swift; sourceTree = "<group>"; };
+		B20000000000000000000017 /* NotificationPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopupView.swift; sourceTree = "<group>"; };
+		B20000000000000000000018 /* AccessibilityNotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityNotificationObserver.swift; sourceTree = "<group>"; };
+		B20000000000000000000019 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		B2000000000000000000001A /* VersionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionChecker.swift; sourceTree = "<group>"; };
+		B2000000000000000000001B /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
+		B2000000000000000000001C /* KeyRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRecorderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000013 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				B40000000000000000000002 /* NotifyDeck */,
+				B40000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B40000000000000000000002 /* NotifyDeck */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000001 /* NotifyDeckApp.swift */,
+				B40000000000000000000004 /* Models */,
+				B40000000000000000000005 /* Core */,
+				B40000000000000000000006 /* UI */,
+				B40000000000000000000008 /* Network */,
+				B40000000000000000000009 /* Resources */,
+				B20000000000000000000013 /* Info.plist */,
+				B20000000000000000000014 /* NotifyDeck.entitlements */,
+			);
+			path = NotifyDeck;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000015 /* NotifyDeck.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000002 /* NotificationItem.swift */,
+				B20000000000000000000003 /* NotificationFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000004 /* StorageManager.swift */,
+				B20000000000000000000005 /* NotificationMonitor.swift */,
+				B20000000000000000000006 /* NotificationCleaner.swift */,
+				B20000000000000000000007 /* PermissionManager.swift */,
+				B20000000000000000000008 /* SettingsManager.swift */,
+				B20000000000000000000018 /* AccessibilityNotificationObserver.swift */,
+				B20000000000000000000019 /* AppConstants.swift */,
+				B2000000000000000000001A /* VersionChecker.swift */,
+				B2000000000000000000001B /* KeyboardShortcut.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000009 /* MenuBarController.swift */,
+				B2000000000000000000000A /* HoverPreviewView.swift */,
+				B2000000000000000000000B /* DropdownView.swift */,
+				B2000000000000000000000C /* HistoryWindowView.swift */,
+				B2000000000000000000000D /* SettingsView.swift */,
+				B20000000000000000000016 /* NotificationPopupController.swift */,
+				B20000000000000000000017 /* NotificationPopupView.swift */,
+				B40000000000000000000007 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2000000000000000000000E /* NotificationRow.swift */,
+				B2000000000000000000000F /* AppFilterChip.swift */,
+				B20000000000000000000010 /* SearchBar.swift */,
+				B2000000000000000000001C /* KeyRecorderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000008 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000011 /* SyncService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B40000000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000012 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B50000000000000000000001 /* NotifyDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70000000000000000000001 /* Build configuration list for PBXNativeTarget "NotifyDeck" */;
+			buildPhases = (
+				B50000000000000000000002 /* Sources */,
+				B30000000000000000000001 /* Frameworks */,
+				B50000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotifyDeck;
+			packageProductDependencies = (
+				B60000000000000000000001 /* GRDB */,
+			);
+			productName = NotifyDeck;
+			productReference = B20000000000000000000015 /* NotifyDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B80000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B70000000000000000000002 /* Build configuration list for PBXProject "NotifyDeck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = B40000000000000000000001;
+			packageReferences = (
+				B60000000000000000000002 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			productRefGroup = B40000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50000000000000000000001 /* NotifyDeck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000012 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* NotifyDeckApp.swift in Sources */,
+				B10000000000000000000002 /* NotificationItem.swift in Sources */,
+				B10000000000000000000003 /* NotificationFilter.swift in Sources */,
+				B10000000000000000000004 /* StorageManager.swift in Sources */,
+				B10000000000000000000005 /* NotificationMonitor.swift in Sources */,
+				B10000000000000000000006 /* NotificationCleaner.swift in Sources */,
+				B10000000000000000000007 /* PermissionManager.swift in Sources */,
+				B10000000000000000000008 /* SettingsManager.swift in Sources */,
+				B10000000000000000000009 /* MenuBarController.swift in Sources */,
+				B1000000000000000000000A /* HoverPreviewView.swift in Sources */,
+				B1000000000000000000000B /* DropdownView.swift in Sources */,
+				B1000000000000000000000C /* HistoryWindowView.swift in Sources */,
+				B1000000000000000000000D /* SettingsView.swift in Sources */,
+				B1000000000000000000000E /* NotificationRow.swift in Sources */,
+				B1000000000000000000000F /* AppFilterChip.swift in Sources */,
+				B10000000000000000000010 /* SearchBar.swift in Sources */,
+				B10000000000000000000011 /* SyncService.swift in Sources */,
+				B10000000000000000000014 /* NotificationPopupController.swift in Sources */,
+				B10000000000000000000015 /* NotificationPopupView.swift in Sources */,
+				B10000000000000000000016 /* AccessibilityNotificationObserver.swift in Sources */,
+				B10000000000000000000017 /* AppConstants.swift in Sources */,
+				B10000000000000000000018 /* VersionChecker.swift in Sources */,
+				B10000000000000000000019 /* KeyboardShortcut.swift in Sources */,
+				B1000000000000000000001A /* KeyRecorderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B90000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B90000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B90000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotifyDeck/NotifyDeck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DHU8C4N287;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotifyDeck/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mugendesk.NotifyDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B90000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotifyDeck/NotifyDeck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DHU8C4N287;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotifyDeck/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mugendesk.NotifyDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B70000000000000000000001 /* Build configuration list for PBXNativeTarget "NotifyDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90000000000000000000003 /* Debug */,
+				B90000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70000000000000000000002 /* Build configuration list for PBXProject "NotifyDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90000000000000000000001 /* Debug */,
+				B90000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B60000000000000000000002 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B60000000000000000000001 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B60000000000000000000002 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B80000000000000000000001 /* Project object */;
+}
